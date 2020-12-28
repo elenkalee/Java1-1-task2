@@ -6,7 +6,9 @@
 
 На тестирование затрачено: 1 ч
 
-В результате тестирования дефектов не выявлено.
+В результате тестирования выявлены слудующие дефекты:
+1. [Не работает валидация карт категорий AMEX, Diners Club - Carte Blanche и International](https://github.com/elenkalee/Java1-1-task2/issues/1)
+2. [Ошибка при валидации части карт](https://github.com/elenkalee/Java1-1-task2/issues/2)
 
 ## Описание процесса тестирования
 
@@ -16,23 +18,17 @@
 
 В качестве тестовых данных использовались данные из [freeformatter.com](https://www.freeformatter.com/credit-card-number-generator-validator.html)  
 
-Валидные номера карт — Result is OK
-* 4929924151964500 Visa  
-* 6011111406673870 Discover  
-* 4913144397001367 Visa Electron  
-* 5596947060855716 Master Card
-* 346819781557448 American Express  
-* 6762222275318827 Maestro  
-* 2201382000000013 Мир
+1. Все группы карт доступны для валидаиции
+2. Результат для всех карт возвращается как `Result is OK`
 
-Невалидные номера карт — Result is FAIL
-* 5169147129584558   
-* 1234123412341234
+
 
 Тестирование производилось в следующем окружении:
-* macOS Catalina 10.15.7
-* openjdk version "11.0.9.1" 2020-11-04
-* IntelliJ IDEA 2020.3 (Community Edition) Build #IC-203.5981.155, built on December 1, 2020
+* ntelliJ IDEA 2020.3 (Community Edition)
+* Build #IC-203.5981.155, built on December 1, 2020
+* Runtime version: 11.0.9+11-b1145.21 x86_64
+* VM: OpenJDK 64-Bit Server VM by JetBrains s.r.o.
+* macOS 10.15.7
 
 
 
